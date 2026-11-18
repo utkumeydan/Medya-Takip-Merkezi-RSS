@@ -19,6 +19,15 @@ from .db import kur, oturum
 from .kaynaklar import esitle, oku
 
 app = FastAPI(title="Medya Takip", docs_url="/api/belgeler", redoc_url=None)
+
+
+@app.middleware("http")
+async def onbellek_basligi(request: Request, call_next):
+    """Panel dosyaları her açılışta yeniden doğrulansın; yeni sürüm yayına alınınca eskisi takılı kalmasın."""
+    yanit = await call_next(request)
+    if request.url.path == "/" or request.url.path.startswith("/statik/"):
+        yanit.headers["Cache-Control"] = "no-cache"
+    return yanit
 WEB = ayarlar.KOK / "web"
 
 
