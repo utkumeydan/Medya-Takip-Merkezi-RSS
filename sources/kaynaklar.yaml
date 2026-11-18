@@ -1,7 +1,8 @@
 # Medya Takip — kaynak listesi
 # Yeni kaynak eklemek için listeye bir giriş ekleyip PR gönderin.
 # tur: rss (sitenin kendi beslemesi) | uretilen (Google Haberler sorgusu, RSSHub vb.)
-# kaynak: girişin ilk bulunduğu açık liste (github=bakinazik/rss, feeder=feeder.co, ...)
+# kaynak: girişin ilk bulunduğu açık liste (github=bakinazik/rss, feeder=feeder.co, ...);
+#         yedek-sorgu = sunucudan erişimi engelleyen siteler için Google Haberler yedeği
 
 kategoriler:
 - id: gundem
@@ -110,6 +111,12 @@ kaynaklar:
   kaynak:
   - github
   - feeder
+- ad: Artı Gerçek — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Aartigercek.com&hl=tr&gl=TR&ceid=TR:tr
+  kategori: gundem
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: Aydınlık
   url: https://www.aydinlik.com.tr/feed
   kategori: gundem
@@ -122,6 +129,12 @@ kaynaklar:
   tur: rss
   kaynak:
   - github
+- ad: Aykırı — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Aaykiri.com.tr&hl=tr&gl=TR&ceid=TR:tr
+  kategori: gundem
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: Açık Gazete
   url: https://www.acikgazete.com/feed/
   kategori: gundem
@@ -134,6 +147,12 @@ kaynaklar:
   tur: rss
   kaynak:
   - github
+- ad: Açıksöz — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Aaciksoz.com.tr&hl=tr&gl=TR&ceid=TR:tr
+  kategori: gundem
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: BBC Türkçe
   url: https://feeds.bbci.co.uk/turkce/rss.xml
   kategori: gundem
@@ -148,6 +167,12 @@ kaynaklar:
   tur: rss
   kaynak:
   - github
+- ad: Bengütürk — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Abenguturk.com&hl=tr&gl=TR&ceid=TR:tr
+  kategori: gundem
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: Beyaz Gazete
   url: https://beyazgazete.com/rss/guncel.xml
   kategori: gundem
@@ -287,12 +312,24 @@ kaynaklar:
   - huggingface
   - wordpresshabertemasi
   - feeder
+- ad: Diken — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Adiken.com.tr&hl=tr&gl=TR&ceid=TR:tr
+  kategori: gundem
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: dikGAZETE
   url: https://www.dikgazete.com/xml/rss.xml
   kategori: gundem
   tur: rss
   kaynak:
   - github
+- ad: dikGAZETE — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Adikgazete.com&hl=tr&gl=TR&ceid=TR:tr
+  kategori: gundem
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: Diriliş Postası
   url: https://www.dirilispostasi.com/rss
   kategori: gundem
@@ -317,6 +354,12 @@ kaynaklar:
   tur: rss
   kaynak:
   - github
+- ad: Doğru Haber — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Adogruhaber.com.tr&hl=tr&gl=TR&ceid=TR:tr
+  kategori: gundem
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: Doğruluk Payı - Son Eklenen İçerikler
   url: https://www.dogrulukpayi.com/rss.xml
   kategori: gundem
@@ -350,6 +393,12 @@ kaynaklar:
   - huggingface
   - wordpresshabertemasi
   - feeder
+- ad: En Son Haber — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Aensonhaber.com&hl=tr&gl=TR&ceid=TR:tr
+  kategori: gundem
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: Euronews
   url: https://tr.euronews.com/rss
   kategori: gundem
@@ -390,6 +439,12 @@ kaynaklar:
   tur: rss
   kaynak:
   - feeder
+- ad: Gazete Duvar — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Agazeteduvar.com.tr&hl=tr&gl=TR&ceid=TR:tr
+  kategori: gundem
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: Gazete Pencere
   url: https://www.gazetepencere.com/feed/
   kategori: gundem
@@ -415,6 +470,12 @@ kaynaklar:
   kaynak:
   - github
   - feeder
+- ad: Gerçek Gündem — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Agercekgundem.com&hl=tr&gl=TR&ceid=TR:tr
+  kategori: gundem
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: GZT
   url: https://www.gzt.com/rss
   kategori: gundem
@@ -439,6 +500,12 @@ kaynaklar:
   tur: rss
   kaynak:
   - github
+- ad: Haber 3 — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Ahaber3.com&hl=tr&gl=TR&ceid=TR:tr
+  kategori: gundem
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: Haber 7
   url: https://i12.haber7.net/sondakika/newsstand/latest.xml
   kategori: gundem
@@ -483,6 +550,12 @@ kaynaklar:
   tur: rss
   kaynak:
   - github
+- ad: Haberiniz — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Ahaberiniz.com.tr&hl=tr&gl=TR&ceid=TR:tr
+  kategori: gundem
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: Haberler
   url: https://rss.haberler.com/RssNew.aspx
   kategori: gundem
@@ -627,6 +700,12 @@ kaynaklar:
   tur: rss
   kaynak:
   - github
+- ad: İnternet Haber — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Ainternethaber.com&hl=tr&gl=TR&ceid=TR:tr
+  kategori: gundem
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: İstanbul Times
   url: https://www.istanbultimes.com.tr/rss
   kategori: gundem
@@ -720,6 +799,12 @@ kaynaklar:
   - github
   - wordpresshabertemasi
   - feeder
+- ad: Medyascope — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Amedyascope.tv&hl=tr&gl=TR&ceid=TR:tr
+  kategori: gundem
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: Memur Zam Haberleri
   url: https://memurzamhaber.com.tr/feed/
   kategori: gundem
@@ -792,6 +877,12 @@ kaynaklar:
   tur: rss
   kaynak:
   - github
+- ad: OdaTV — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Aodatv.com&hl=tr&gl=TR&ceid=TR:tr
+  kategori: gundem
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: Perspektif
   url: https://www.perspektif.online/feed/
   kategori: gundem
@@ -1039,12 +1130,24 @@ kaynaklar:
   tur: rss
   kaynak:
   - feeder
+- ad: TV100 — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Atv100.com&hl=tr&gl=TR&ceid=TR:tr
+  kategori: gundem
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: Türkgün
   url: https://www.turkgun.com/rss/news
   kategori: gundem
   tur: rss
   kaynak:
   - github
+- ad: Türkgün — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Aturkgun.com&hl=tr&gl=TR&ceid=TR:tr
+  kategori: gundem
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: TürkInform
   url: https://turkinform.com.tr/rss
   kategori: gundem
@@ -1069,6 +1172,12 @@ kaynaklar:
   tur: rss
   kaynak:
   - github
+- ad: Ulusal Kanal — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Aulusal.com.tr&hl=tr&gl=TR&ceid=TR:tr
+  kategori: gundem
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: Ulusal Post
   url: https://www.ulusalpost.com/service/rss.php
   kategori: gundem
@@ -1703,6 +1812,12 @@ kaynaklar:
   tur: rss
   kaynak:
   - katki
+- ad: ParaMedya — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Aparamedya.com&hl=tr&gl=TR&ceid=TR:tr
+  kategori: ekonomi
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: Patronlar Dünyası Ekonomi
   url: https://www.patronlardunyasi.com/rss/ekonomi
   kategori: ekonomi
@@ -2012,12 +2127,24 @@ kaynaklar:
   kaynak:
   - github
   - wordpresshabertemasi
+- ad: Technopat — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Atechnopat.net&hl=tr&gl=TR&ceid=TR:tr
+  kategori: teknoloji
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: Techolay
   url: https://techolay.net/feed/
   kategori: teknoloji
   tur: rss
   kaynak:
   - github
+- ad: Techolay — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Atecholay.net&hl=tr&gl=TR&ceid=TR:tr
+  kategori: teknoloji
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: TechTurco
   url: https://www.techturco.com/rss
   kategori: teknoloji
@@ -2036,6 +2163,12 @@ kaynaklar:
   tur: rss
   kaynak:
   - github
+- ad: TeknoBurada — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Ateknoburada.net&hl=tr&gl=TR&ceid=TR:tr
+  kategori: teknoloji
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: Teknodiot
   url: https://teknodiot.com/feed/
   kategori: teknoloji
@@ -2048,6 +2181,12 @@ kaynaklar:
   tur: rss
   kaynak:
   - github
+- ad: Teknolojioku — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Ateknolojioku.com&hl=tr&gl=TR&ceid=TR:tr
+  kategori: teknoloji
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: TRT Haber — Bilim-Teknoloji
   url: https://www.trthaber.com/bilim_teknoloji_articles.rss
   kategori: teknoloji
@@ -2368,6 +2507,12 @@ kaynaklar:
   tur: rss
   kaynak:
   - github
+- ad: Mürekkep Haber — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Amurekkephaber.com&hl=tr&gl=TR&ceid=TR:tr
+  kategori: kultur-sanat
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: Nouvart
   url: https://www.nouvart.net/feed/
   kategori: kultur-sanat
@@ -2850,6 +2995,12 @@ kaynaklar:
   tur: rss
   kaynak:
   - github
+- ad: Turkmmo — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Aturkmmo.com&hl=tr&gl=TR&ceid=TR:tr
+  kategori: eglence
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: Öteki Sinema
   url: https://www.otekisinema.com/feed/
   kategori: eglence
@@ -3068,6 +3219,12 @@ kaynaklar:
   kaynak:
   - github
   - feeder
+- ad: DefenceTurk — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Adefenceturk.net&hl=tr&gl=TR&ceid=TR:tr
+  kategori: savunma
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: Mavi Savunma
   url: https://mavisavunma.com/feed/
   kategori: savunma
@@ -3086,6 +3243,12 @@ kaynaklar:
   tur: rss
   kaynak:
   - github
+- ad: Savunma Sanayi Gazetesi — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Asavunmasanayigazetesi.com.tr&hl=tr&gl=TR&ceid=TR:tr
+  kategori: savunma
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: SavunmaSanayiST
   url: https://www.savunmasanayist.com/feed/
   kategori: savunma
@@ -3219,6 +3382,12 @@ kaynaklar:
   tur: rss
   kaynak:
   - feeder
+- ad: Son Dakika Isparta Haberleri — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Ason32.com&hl=tr&gl=TR&ceid=TR:tr
+  kategori: yerel
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: Uyan32
   url: https://www.uyan32.com/rss
   kategori: yerel
@@ -3232,6 +3401,12 @@ kaynaklar:
   tur: rss
   kaynak:
   - katki
+- ad: ÖnTürk TV (Balıkesir) — Google Haberler
+  url: https://news.google.com/rss/search?q=site%3Aonturk.tv&hl=tr&gl=TR&ceid=TR:tr
+  kategori: yerel
+  tur: uretilen
+  kaynak:
+  - yedek-sorgu
 - ad: ÖnTürk TV — Balıkesir haberleri
   url: https://www.onturk.tv/rss_balikesir-haberleri_33.xml
   kategori: yerel

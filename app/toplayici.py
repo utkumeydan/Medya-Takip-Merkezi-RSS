@@ -106,12 +106,14 @@ async def besleme_getir(client, genel, site, k) -> dict:
             "gorsel": gorsel,
             "yayin": yayin,
         })
-    # Bazı beslemeler her istekte tüm öğelere o anın tarihini yazar (ör. 1000 makalenin hepsi "şimdi").
-    # Böyle sahte tarihler tarihsiz sayılır: ilk taramada eski, sonra ilk görüldüğü an.
+    # Bazı beslemeler her istekte tüm öğelere o anın tarihini yazar (ör. 1000 makalenin hepsi son bir saat).
+    # Ortalama 20 saniyeden sık yayın tek bir site için gerçekçi değil; böyle tarihler tarihsiz sayılır:
+    # ilk taramada eski, sonra ilk görüldüğü an.
     tarihler = [o["yayin"] for o in sonuc["ogeler"] if o["yayin"]]
-    if len(tarihler) >= 10 and max(tarihler) - min(tarihler) < 300:
+    if len(tarihler) >= 10 and max(tarihler) - min(tarihler) < max(300, len(tarihler) * 20):
         for o in sonuc["ogeler"]:
             o["yayin"] = None
+        sonuc["sahte_tarih"] = True
     return sonuc
 
 
@@ -152,6 +154,15 @@ def kaydet(con, dizin: OlayDizini, sonuc: dict, simdi: int) -> list[int]:
         return []
     eski_sinir = simdi - ayarlar.SAKLAMA_GUN * 86400
     ilk_tarama = k["son_kontrol"] is None
+    if sonuc.get("sahte_tarih") and not ilk_tarama:
+        # Sahte tarihli beslemenin ilk taramada "yeni" sanılan öğelerini geriye çek (bir kez)
+        ilk = con.execute("SELECT MIN(toplandi) FROM haber WHERE kaynak_id=?", (k["id"],)).fetchone()[0]
+        kosul = "kaynak_id=? AND toplandi=? AND yayin > toplandi - 86400"
+        etkilenen = [r[0] for r in con.execute(f"SELECT DISTINCT olay_id FROM haber WHERE {kosul}", (k["id"], ilk))]
+        if etkilenen:
+            con.execute(f"UPDATE haber SET yayin = toplandi - 3*86400 WHERE {kosul}", (k["id"], ilk))
+            for oid in etkilenen:
+                olay_guncelle(con, oid)
     yeni_idler, degisen_olaylar = [], set()
     for o in sonuc["ogeler"]:
         if o["yayin"] is None:

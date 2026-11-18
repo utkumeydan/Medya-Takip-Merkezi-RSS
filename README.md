@@ -1,20 +1,58 @@
-# Medya Takip
+<div align="center">
 
-Türkçe haber kaynakları için açık kaynak bir **RSS dizini** ve **medya takip merkezi**.
+# Medya Takip Merkezi
 
-- **RSS dizini:** 535 doğrulanmış Türkçe besleme, 14 kategoride. Tek beslemeyi kopyala, birden çoğunu seçip URL listesi ya da OPML olarak al, seçtiklerinden ve anahtar kelimelerden **tek bir birleşik RSS adresi** üret.
-- **Takip merkezi:** Tüm kaynaklardan canlı akış. Aynı haberin farklı sitelerdeki kopyaları tek **olay** altında toplanır, her olayın kaynaklarını zaman çizelgesinde görürsün. Takip listesi, trend tespiti, tam metin arama, grafikler.
-- **Kayıtlar tarayıcıda:** Kaydetme, etiketleme ve notlar yalnızca kullanıcının tarayıcısında tutulur. Üyelik yok, sunucuda kişisel veri yok.
+**Türkçe haber kaynakları için açık kaynak RSS dizini ve canlı medya takip paneli**
 
-## Hızlı başlangıç
+Türkçe · [English](README.en.md)
+
+[**Canlı demo → mtm.utkumeydan.com**](https://mtm.utkumeydan.com) &nbsp;·&nbsp; MIT lisansı &nbsp;·&nbsp; Kendi sunucuna tek komutla kur
+
+![Medya Takip Merkezi — akış ve "Şu an gündemde"](docs/akis.jpg)
+
+</div>
+
+564 Türkçe haber beslemesini 10 dakikada bir tarar. Aynı haberin onlarca sitedeki kopyalarını tek bir **olay** altında toplar, hangi sitenin kaçta yazdığını zaman çizelgesinde gösterir, yükselen adları yakalar. Topladığı beslemeleri kategorili bir dizinde herkesle paylaşır: tek tek kopyala, toplu OPML indir ya da seçtiğin kaynaklardan ve anahtar kelimelerden kendi RSS adresini üret.
+
+## Neler var
+
+| | |
+|---|---|
+| **Görsel akış** | Haberler görselli kartlarda; en çok sitenin yazdığı gelişmeler "Şu an gündemde" manşetinde |
+| **Olay kümeleme** | Aynı haber 30 sitede çıksa da tek kart; altında tüm kaynaklar ve yayın saatleri |
+| **Trendler** | Son 2 saatte, önceki 24 saate göre en hızlı yükselen kişi, kurum ve yer adları |
+| **Takip listesi** | Kişi, kulüp, marka ekle; geçtiği haberler süzülür ve işaretlenir |
+| **Tam metin arama** | Türkçe karakterleri tanır: "ısınma" araması "Isınma"yı da bulur |
+| **Grafikler** | Saatlik haber yoğunluğu, en çok yazan kaynaklar, kategori dağılımı |
+| **RSS dizini** | 564 besleme, 14 kategori; her birinin canlılık durumu ve son haber saati |
+| **Birleşik besleme** | Seçtiğin kaynaklar + anahtar kelimeler = tek RSS adresi |
+| **OPML** | Seçili kaynakları ya da bir kategorinin tamamını Feedly, Inoreader vb. okuyuculara aktar |
+| **Kayıtlar tarayıcıda** | Kaydet, etiketle, not al; üyelik yok, sunucuda kişisel veri yok |
+
+<table>
+<tr>
+<td width="50%"><img src="docs/kartlar.jpg" alt="Görselli kart akışı"><br><sub>Kategoriye göre süzülen görselli akış</sub></td>
+<td width="50%"><img src="docs/cekmece.jpg" alt="Olay çekmecesi"><br><sub>Olay çekmecesi: 12 kaynak, kim kaçta yazdı</sub></td>
+</tr>
+<tr>
+<td width="50%"><img src="docs/dizin.jpg" alt="RSS dizini"><br><sub>RSS dizini: seç, kopyala, OPML indir, birleşik besleme üret</sub></td>
+<td width="50%" align="center"><img src="docs/mobil.jpg" alt="Mobil görünüm" width="230"><br><sub>Telefonda koyu tema</sub></td>
+</tr>
+</table>
+
+<sub>Ekran görüntülerindeki haber fotoğrafları telif ve kişi hakları nedeniyle bulanıklaştırılmıştır.</sub>
+
+## Kurulum
 
 ```bash
+git clone https://github.com/utkumeydan/Medya-Takip-Merkezi-RSS.git
+cd Medya-Takip-Merkezi-RSS
 docker compose up -d
 ```
 
-Panel `http://localhost:8000` adresinde açılır. İlk tarama yaklaşık bir dakika sürer, sonra beslemeler her 10 dakikada bir taranır.
+Panel `http://localhost:8000` adresinde açılır. İlk tarama yaklaşık bir dakika sürer.
 
-### Docker olmadan
+**Docker olmadan** (Python 3.10+):
 
 ```bash
 python3 -m venv .venv
@@ -22,7 +60,9 @@ python3 -m venv .venv
 .venv/bin/uvicorn app.api:app --port 8000
 ```
 
-Python 3.10 veya üstü gerekir. Veritabanı `data/medya.db` dosyasıdır (SQLite, ek kurulum yok).
+Veritabanı tek bir SQLite dosyasıdır (`data/medya.db`), ek kurulum gerekmez.
+
+**Coolify, CapRover vb.:** Depoyu bağla, derleme türü olarak Dockerfile'ı seç, port `8000`, kalıcı alanı `/veri` yoluna bağla.
 
 ## Ayarlar
 
@@ -34,67 +74,67 @@ Python 3.10 veya üstü gerekir. Veritabanı `data/medya.db` dosyasıdır (SQLit
 | `MT_TAM_METIN_GUN` | `7` | Tam metnin tutulacağı gün |
 | `MT_ESZAMANLI` / `MT_SITE_BASINA` | `20` / `2` | Aynı anda en fazla istek / aynı siteye en fazla istek |
 | `MT_GENEL_ADRES` | — | Birleşik beslemelerde görünecek adres, ör. `https://medya.ornek.org` |
-| `MT_TOPLAYICI` | `1` | `0` yaparsan API toplayıcıyı başlatmaz (toplayıcıyı ayrı çalıştırmak için `python -m app.toplayici`) |
+| `MT_TOPLAYICI` | `1` | `0` yaparsan API toplayıcıyı başlatmaz (ayrı çalıştırmak için `python -m app.toplayici`) |
 | `MT_VERI` / `MT_KAYNAKLAR` / `MT_SIMGELER` | `data/medya.db` / `sources/kaynaklar.yaml` / `simgeler/` | Dosya yolları |
 
 ## Birleşik besleme ve API
 
-Hepsi herkese açık, anahtar gerekmez.
+Hepsi herkese açık, anahtar gerekmez. Örnekler canlı demoda çalışır:
 
 | Adres | Ne verir |
 |---|---|
-| `/feed?kat=spor&takip=transfer` | Spor kategorisinde "transfer" geçen haberlerin RSS'i |
+| [`/feed?kat=spor&takip=transfer`](https://mtm.utkumeydan.com/feed?kat=spor&takip=transfer) | Spor kategorisinde "transfer" geçen haberler |
 | `/feed?k=ntv-spor-futbol,a-spor&q=derbi` | Seçili kaynaklarda "derbi" geçenler |
-| `/feed?takip=Galatasaray,Okan Buruk&tekil=1` | Terimlerden biri geçen haberler; `tekil=1` (varsayılan) her olaydan yalnız ilk haberi verir |
-| `/api/opml?kat=gundem,ekonomi` veya `/api/opml?k=...` | OPML dosyası |
+| `/feed?takip=Galatasaray,Okan Buruk` | Terimlerden biri geçen haberler; her olaydan yalnız ilk haber (`tekil=1`) |
+| [`/api/opml?kat=gundem,ekonomi`](https://mtm.utkumeydan.com/api/opml?kat=gundem,ekonomi) | OPML dosyası |
 | `/api/liste?kat=teknoloji` | Düz metin URL listesi |
 | `/api/kaynaklar`, `/api/kategoriler` | Dizin verisi (JSON) |
 | `/api/olaylar?q=&takip=&kat=&kaynak=&saat=24` | Olaylar ve kaynakları |
 | `/api/trendler`, `/api/istatistik` | Trendler ve grafik verisi |
 
-Tüm uç noktalar: `/api/belgeler`.
+Tüm uç noktalar: [`/api/belgeler`](https://mtm.utkumeydan.com/api/belgeler).
 
 ## Kaynak eklemek
 
-Kaynaklar [`sources/kaynaklar.yaml`](sources/kaynaklar.yaml) dosyasında durur. Yeni kaynak için listeye bir giriş ekleyip PR gönder:
+Kaynaklar [`sources/kaynaklar.yaml`](sources/kaynaklar.yaml) dosyasında. Listeye bir giriş ekleyip PR gönder:
 
 ```yaml
 - ad: Örnek Haber — Spor
   url: https://www.ornekhaber.com/rss/spor
   kategori: spor          # kategoriler dosyanın başında
-  tur: rss                # rss: sitenin kendi beslemesi, uretilen: Google Haberler sorgusu, RSSHub vb.
+  tur: rss                # rss: sitenin kendi beslemesi · uretilen: Google Haberler sorgusu, RSSHub vb.
   kaynak: [katkı]
 ```
 
-PR açıldığında GitHub Actions yalnız yeni eklenen adresleri dener: besleme çalışmıyor ya da içerik Türkçe değilse kontrol başarısız olur. Yerelde aynı denetim:
+PR açıldığında GitHub Actions yalnızca yeni eklenen adresleri dener; besleme çalışmıyorsa ya da içerik Türkçe değilse kontrol başarısız olur. Yerelde aynı denetim:
 
 ```bash
 .venv/bin/python scripts/kaynak_kontrol.py --canli
 ```
 
-Kendi sitesinde RSS olmayan kurumlar (ör. kulüp siteleri) için `tur: uretilen` ile Google Haberler sorgusu ya da kendi [RSSHub](https://docs.rsshub.app) kurulumundaki bir adres eklenebilir.
+RSS'i olmayan ya da sunucu isteklerini engelleyen siteler için `tur: uretilen` ile Google Haberler sorgusu (`site:alanadi.com`) eklenebilir.
 
 ## Nasıl çalışır
 
-- **Toplayıcı** (`app/toplayici.py`): Beslemeleri `ETag` / `Last-Modified` ile koşullu çeker, aynı siteye aynı anda en fazla iki istek gönderir.
-- **Olay kümeleme:** Başlıklar Türkçeye uygun biçimde sadeleştirilir (kesme ekleri atılır, sözcükler 5 harfe kısaltılır) ve son 48 saatteki olaylarla benzerliğe göre eşleştirilir.
-- **Trendler:** Başlıklardaki özel adların (kişi, kurum, yer) son 2 saatteki geçme hızı önceki 24 saatle karşılaştırılır. En az 4 farklı sitede geçen adlar listelenir.
-- **Site simgeleri:** Kaynakların simgeleri 64 piksellik PNG olarak `simgeler/` klasöründe tutulur ve `/simge/<kaynak-id>` adresinden verilir; okuyucunun tarayıcısı hiçbir dış servise istek atmaz. Yeni eklenen kaynakların simgeleri tarama sırasında indirilir (`python -m app.simgeler` ile elle de çalıştırılabilir).
-- **Görseller:** Haber görseli beslemenin medya alanından, yoksa özet ya da içerik HTML'indeki ilk görselden alınır. Görseller kaynağın kendi sunucusundan yüklenir, kopyalanmaz.
-- **Arama:** SQLite FTS5. Türkçe karakterler katlanır, "ısınma" araması "Isınma"yı da bulur.
+- **Toplayıcı:** Beslemeleri `ETag` / `Last-Modified` ile koşullu çeker, aynı siteye aynı anda en fazla iki istek gönderir. Her haberine o anın tarihini yazan beslemeleri tanır ve tarihsiz sayar.
+- **Olay kümeleme:** Başlıklar Türkçeye göre sadeleştirilir (kesme ekleri atılır, sözcükler köke yaklaştırılır) ve son 48 saatteki olaylarla benzerliğe göre eşleştirilir.
+- **Trendler:** Başlıklardaki özel adların son 2 saatteki geçme hızı önceki 24 saatle karşılaştırılır; en az 4 farklı sitede geçenler listelenir.
+- **Simgeler:** Site simgeleri proje içinde (`simgeler/`) 64 piksellik PNG olarak tutulur; okuyucunun tarayıcısı hiçbir dış servise istek atmaz.
+- **Arama:** SQLite FTS5, Türkçe karakter katlamalı.
 
 ## Telif
 
-Panel haberlerin yalnız başlığını, beslemedeki kısa özetini ve orijinal habere bağlantıyı gösterir. Tam metin yalnız sunucuda, arama dizini için ve sınırlı süre tutulur, hiçbir yerde yeniden yayımlanmaz. Kendi kurulumunda tam metni kapatmak için `MT_TAM_METIN=0`.
+Panel haberlerin yalnızca başlığını, beslemedeki kısa özetini ve orijinal habere bağlantıyı gösterir; görseller kaynağın kendi sunucusundan yüklenir. Tam metin yalnızca sunucuda, arama dizini için ve sınırlı süre tutulur, hiçbir yerde yeniden yayımlanmaz. Kendi kurulumunda kapatmak için `MT_TAM_METIN=0`.
 
 ## Teşekkür
 
-İlk kaynak listesi şu açık listelerden derlenip tek tek doğrulandı:
+İlk kaynak listesi şu açık listelerden derlenip tek tek doğrulandı: [bakinazik/rss](https://github.com/bakinazik/rss) · [feeder.co Türkiye](https://feeder.co/discover/turkey) · [wordpresshabertemasi.com](https://wordpresshabertemasi.com/blog/turkiye-haber-siteleri-rss-adresleri) · [fatihdx/tr-rss-haber-akisi-verisi](https://huggingface.co/datasets/fatihdx/tr-rss-haber-akisi-verisi)
 
-- [bakinazik/rss](https://github.com/bakinazik/rss)
-- [feeder.co Türkiye](https://feeder.co/discover/turkey)
-- [wordpresshabertemasi.com RSS adresleri](https://wordpresshabertemasi.com/blog/turkiye-haber-siteleri-rss-adresleri)
-- [fatihdx/tr-rss-haber-akisi-verisi](https://huggingface.co/datasets/fatihdx/tr-rss-haber-akisi-verisi) (Hugging Face)
+## Geliştiren
+
+**İlyas Utku Meydan** · Creative × AI · [utkumeydan.com](https://utkumeydan.com)
+
+Projeyi beğendiysen depoya ⭐ bırakabilirsin.
 
 ## Lisans
 
