@@ -6,7 +6,7 @@
 
 Türkçe · [English](README.en.md)
 
-[**Canlı demo → mtm.utkumeydan.com**](https://mtm.utkumeydan.com) &nbsp;·&nbsp; MIT lisansı &nbsp;·&nbsp; Kendi sunucuna tek komutla kur
+MIT lisansı &nbsp;·&nbsp; Kendi sunucuna tek komutla kur
 
 ![Medya Takip Merkezi — akış ve "Şu an gündemde"](docs/akis.jpg)
 
@@ -79,20 +79,20 @@ Veritabanı tek bir SQLite dosyasıdır (`data/medya.db`), ek kurulum gerekmez.
 
 ## Birleşik besleme ve API
 
-Hepsi herkese açık, anahtar gerekmez. Örnekler canlı demoda çalışır:
+Hepsi herkese açık, anahtar gerekmez:
 
 | Adres | Ne verir |
 |---|---|
-| [`/feed?kat=spor&takip=transfer`](https://mtm.utkumeydan.com/feed?kat=spor&takip=transfer) | Spor kategorisinde "transfer" geçen haberler |
+| `/feed?kat=spor&takip=transfer` | Spor kategorisinde "transfer" geçen haberler |
 | `/feed?k=ntv-spor-futbol,a-spor&q=derbi` | Seçili kaynaklarda "derbi" geçenler |
 | `/feed?takip=Galatasaray,Okan Buruk` | Terimlerden biri geçen haberler; her olaydan yalnız ilk haber (`tekil=1`) |
-| [`/api/opml?kat=gundem,ekonomi`](https://mtm.utkumeydan.com/api/opml?kat=gundem,ekonomi) | OPML dosyası |
+| `/api/opml?kat=gundem,ekonomi` | OPML dosyası |
 | `/api/liste?kat=teknoloji` | Düz metin URL listesi |
 | `/api/kaynaklar`, `/api/kategoriler` | Dizin verisi (JSON) |
 | `/api/olaylar?q=&takip=&kat=&kaynak=&saat=24` | Olaylar ve kaynakları |
 | `/api/trendler`, `/api/istatistik` | Trendler ve grafik verisi |
 
-Tüm uç noktalar: [`/api/belgeler`](https://mtm.utkumeydan.com/api/belgeler).
+Tüm uç noktalar: `/api/belgeler`.
 
 ## Kaynak eklemek
 

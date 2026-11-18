@@ -6,7 +6,7 @@
 
 [Türkçe](README.md) · English
 
-[**Live demo → mtm.utkumeydan.com**](https://mtm.utkumeydan.com) &nbsp;·&nbsp; MIT licensed &nbsp;·&nbsp; Self-host with one command
+MIT licensed &nbsp;·&nbsp; Self-host with one command
 
 ![Medya Takip Merkezi — feed and top stories](docs/akis.jpg)
 
@@ -81,20 +81,20 @@ The database is a single SQLite file (`data/medya.db`); nothing else to install.
 
 ## Combined feeds and API
 
-All public, no key needed. The examples work on the live demo:
+All public, no key needed:
 
 | URL | Returns |
 |---|---|
-| [`/feed?kat=spor&takip=transfer`](https://mtm.utkumeydan.com/feed?kat=spor&takip=transfer) | Sports stories mentioning "transfer" |
+| `/feed?kat=spor&takip=transfer` | Sports stories mentioning "transfer" |
 | `/feed?k=ntv-spor-futbol,a-spor&q=derbi` | Stories from selected sources mentioning "derbi" |
 | `/feed?takip=Galatasaray,Okan Buruk` | Stories matching any term; one item per event (`tekil=1`) |
-| [`/api/opml?kat=gundem,ekonomi`](https://mtm.utkumeydan.com/api/opml?kat=gundem,ekonomi) | OPML file |
+| `/api/opml?kat=gundem,ekonomi` | OPML file |
 | `/api/liste?kat=teknoloji` | Plain-text URL list |
 | `/api/kaynaklar`, `/api/kategoriler` | Directory data (JSON) |
 | `/api/olaylar?q=&takip=&kat=&kaynak=&saat=24` | Events and their sources |
 | `/api/trendler`, `/api/istatistik` | Trends and chart data |
 
-Interactive docs: [`/api/belgeler`](https://mtm.utkumeydan.com/api/belgeler).
+Interactive docs: `/api/belgeler`.
 
 ## Adding a source
 
