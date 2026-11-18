@@ -1,0 +1,30 @@
+name: Kaynak kontrolü
+
+on:
+  pull_request:
+    paths: ["sources/**", "app/**", "scripts/**"]
+  schedule:
+    - cron: "0 6 * * 1"   # her pazartesi tüm liste
+  workflow_dispatch:
+
+jobs:
+  kontrol:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Dosya yapısı
+        run: python scripts/kaynak_kontrol.py
+      - name: Yeni eklenen kaynaklar çalışıyor mu
+        if: github.event_name == 'pull_request'
+        run: |
+          git show origin/${{ github.base_ref }}:sources/kaynaklar.yaml > /tmp/taban.yaml || true
+          python scripts/kaynak_kontrol.py --canli --taban /tmp/taban.yaml
+      - name: Haftalık tüm liste raporu
+        if: github.event_name != 'pull_request'
+        run: python scripts/kaynak_kontrol.py --canli

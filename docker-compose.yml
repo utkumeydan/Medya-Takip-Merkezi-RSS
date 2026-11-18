@@ -1,0 +1,19 @@
+services:
+  medya-takip:
+    build: .
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - veri:/veri
+      # Kendi kaynak listeni kullanmak için:
+      # - ./sources/kaynaklar.yaml:/uygulama/sources/kaynaklar.yaml:ro
+    environment:
+      MT_ARALIK_DK: "10"        # tarama aralığı (dakika)
+      MT_SAKLAMA_GUN: "30"      # haberlerin tutulacağı gün
+      MT_TAM_METIN: "1"         # arama için makale tam metnini çek (0 = kapalı)
+      MT_TAM_METIN_GUN: "7"     # tam metnin tutulacağı gün
+      # MT_GENEL_ADRES: "https://medya.ornek.org"  # birleşik beslemelerde görünecek adres
+
+volumes:
+  veri:

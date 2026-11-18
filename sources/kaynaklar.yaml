@@ -1,0 +1,3342 @@
+# Medya Takip — kaynak listesi
+# Yeni kaynak eklemek için listeye bir giriş ekleyip PR gönderin.
+# tur: rss (sitenin kendi beslemesi) | uretilen (Google Haberler sorgusu, RSSHub vb.)
+# kaynak: girişin ilk bulunduğu açık liste (github=bakinazik/rss, feeder=feeder.co, ...)
+
+kategoriler:
+- id: gundem
+  ad: Gündem
+- id: spor
+  ad: Spor
+- id: ekonomi
+  ad: Ekonomi ve Finans
+- id: teknoloji
+  ad: Teknoloji
+- id: bilim
+  ad: Bilim
+- id: kultur-sanat
+  ad: Kültür ve Sanat
+- id: yasam
+  ad: Yaşam
+- id: eglence
+  ad: Eğlence
+- id: is-dunyasi
+  ad: İş Dünyası
+- id: savunma
+  ad: Savunma ve Sanayi
+- id: resmi
+  ad: Resmi Kurumlar
+- id: yerel
+  ad: Yerel
+- id: video
+  ad: Video
+- id: sorgu
+  ad: Sorgu beslemeleri
+kaynaklar:
+- ad: 10Haber
+  url: https://10haber.net/feed/
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: A Haber
+  url: https://www.ahaber.com.tr/rss/gundem.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - huggingface
+- ad: ABC Haber
+  url: https://abcgazetesi.com.tr/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Agos
+  url: https://www.agos.com.tr/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Ajans Kamu
+  url: https://www.ajanskamu.net/service/rss.php
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Akşam
+  url: https://www.aksam.com.tr/rss/rss.asp
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Anadolu Ajansı
+  url: https://www.aa.com.tr/tr/rss/default?cat=guncel
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - huggingface
+  - wordpresshabertemasi
+  - feeder
+- ad: Anadolu Ajansı — Analiz
+  url: https://www.aa.com.tr/tr/rss/default?cat=analiz
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Anadolu Ajansı — Dünya
+  url: https://www.aa.com.tr/tr/rss/default?cat=dunya
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Analiz Gazetesi — Dünya
+  url: https://analizgazetesi.com.tr/modules/blog/rss.php?cid=4
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - katki
+- ad: Analiz Gazetesi — Gündem
+  url: https://analizgazetesi.com.tr/modules/blog/rss.php?cid=3
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - katki
+- ad: Artı Gerçek
+  url: https://artigercek.com/service/rss.php
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - feeder
+- ad: Aydınlık
+  url: https://www.aydinlik.com.tr/feed
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Aykırı
+  url: https://www.aykiri.com.tr/rss.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Açık Gazete
+  url: https://www.acikgazete.com/feed/
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Açıksöz
+  url: https://www.aciksoz.com.tr/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: BBC Türkçe
+  url: https://feeds.bbci.co.uk/turkce/rss.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+  - feeder
+- ad: Bengütürk
+  url: https://www.benguturk.com/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Beyaz Gazete
+  url: https://beyazgazete.com/rss/guncel.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: BHA
+  url: https://bha.net.tr/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Bianet
+  url: http://bianet.org/bianet.rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Bianet — Biamag
+  url: https://bianet.org/biamag.rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - huggingface
+- ad: Bir Gazete
+  url: https://www.birgazete.com/feed
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: BirGün
+  url: https://www.birgun.net/rss/home
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - huggingface
+  - feeder
+- ad: BT Haber Haber Akisi
+  url: https://bthaber.com/feed
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Bursa'da Bugün
+  url: https://www.bursadabugun.com/rss/?feed=haberler
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: CGTN Türk
+  url: https://www.cgtnturk.com/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: CNN Türk
+  url: https://www.cnnturk.com/feed/rss/all/news
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - huggingface
+  - wordpresshabertemasi
+- ad: CNN Türk Dünya
+  url: https://www.cnnturk.com/feed/rss/dunya/news
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+  - feeder
+- ad: CNN Türk — Otomobil
+  url: https://www.cnnturk.com/feed/rss/otomobil/news
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: CNN Türk — Türkiye
+  url: https://www.cnnturk.com/feed/rss/turkiye/news
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+  - feeder
+- ad: Cumhuriyet
+  url: https://www.cumhuriyet.com.tr/rss/son_dakika.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - huggingface
+- ad: Cumhuriyet — Dünya
+  url: https://www.cumhuriyet.com.tr/rss/dunya
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+  - feeder
+- ad: Cumhuriyet — Siyaset
+  url: https://www.cumhuriyet.com.tr/rss/siyaset
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Cumhuriyet — Türkiye
+  url: https://www.cumhuriyet.com.tr/rss/turkiye
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Daktilo1984
+  url: https://daktilo1984.com/feed/
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Demokrat Haber
+  url: https://www.demokrathaber.org/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Dijital Gaste
+  url: https://www.dijitalgaste.com/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Diken
+  url: https://www.diken.com.tr/feed/
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - huggingface
+  - wordpresshabertemasi
+  - feeder
+- ad: dikGAZETE
+  url: https://www.dikgazete.com/xml/rss.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Diriliş Postası
+  url: https://www.dirilispostasi.com/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Diyanet Haber
+  url: https://www.diyanethaber.com.tr/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Dokuz8 Haber
+  url: https://dokuz8haber.net/rss.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Doğru Haber
+  url: https://dogruhaber.com.tr/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Doğruluk Payı - Son Eklenen İçerikler
+  url: https://www.dogrulukpayi.com/rss.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - feeder
+- ad: DW Haber
+  url: https://rss.dw.com/rdf/rss-tur-all
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Elips Haber
+  url: https://www.elipshaber.com/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: En Politik
+  url: https://www.enpolitik.com/rss.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: En Son Haber
+  url: https://www.ensonhaber.com/rss/ensonhaber.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - huggingface
+  - wordpresshabertemasi
+  - feeder
+- ad: Euronews
+  url: https://tr.euronews.com/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+- ad: Evrensel
+  url: https://www.evrensel.net/rss/haber.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - feeder
+- ad: F5 Haber
+  url: https://www.f5haber.com/export/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - feeder
+- ad: Fayn
+  url: https://www.fayn.press/rss/
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Gazete Duvar
+  url: https://www.gazeteduvar.com.tr/export/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - huggingface
+- ad: Gazete Duvar
+  url: https://www.gazeteduvar.com.tr/feed/
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Gazete Pencere
+  url: https://www.gazetepencere.com/feed/
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Gazete Zebra
+  url: https://www.gazetezebra.com.tr/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: GDH
+  url: https://gdhdijital.com/rss/tum.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Gerçek Gündem
+  url: https://www.gercekgundem.com/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - feeder
+- ad: GZT
+  url: https://www.gzt.com/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Gündem Kıbrıs
+  url: https://www.gundemkibris.com/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Haber
+  url: https://www.haber.com/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Haber 3
+  url: https://www.haber3.com/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Haber 7
+  url: https://i12.haber7.net/sondakika/newsstand/latest.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - feeder
+- ad: Haber Ege — Gündem
+  url: https://www.haberege.com.tr/rss/gundem
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - katki
+- ad: Haber Ege — Siyaset
+  url: https://www.haberege.com.tr/rss/siyaset
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - katki
+- ad: Haber Global
+  url: https://haberglobal.com.tr/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - feeder
+- ad: Haber7 — Son dakika
+  url: http://sondakika.haber7.com/sondakika.rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Haberet
+  url: https://www.haberet.com/export/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Haberiniz
+  url: https://haberiniz.com.tr/feed/
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Haberler
+  url: https://rss.haberler.com/RssNew.aspx
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Haberler Türkiye
+  url: https://www.haberlerturkiye.com.tr/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - katki
+- ad: Haberport
+  url: https://www.haberport.com/rss/latest-posts
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: HaberSitesi.org
+  url: https://habersitesi.org/rss.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: HABERTURK.COM
+  url: https://www.haberturk.com/rss/manset.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Habertürk
+  url: https://www.haberturk.com/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - huggingface
+  - wordpresshabertemasi
+- ad: Habertürk — Dünya
+  url: https://www.haberturk.com/rss/dunya.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Habertürk — Gündem
+  url: https://www.haberturk.com/rss/gundem.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Halk TV
+  url: https://halktv.com.tr/service/rss.php
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - huggingface
+- ad: Harici
+  url: https://harici.com.tr/feed/
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Hukuki Haber
+  url: https://www.hukukihaber.net/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Hürriyet
+  url: https://www.hurriyet.com.tr/rss/anasayfa
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+  - feeder
+- ad: Hürriyet — Dünya
+  url: https://www.hurriyet.com.tr/rss/dunya
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Hürriyet — Eğitim
+  url: https://www.hurriyet.com.tr/rss/egitim
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Hürriyet — Gündem
+  url: https://www.hurriyet.com.tr/rss/gundem
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Hürriyet — Siyaset
+  url: https://www.hurriyet.com.tr/rss/siyaset
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Independent Türkçe
+  url: https://www.indyturk.com/rss.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - feeder
+- ad: IRNA Türkçe
+  url: https://tr.irna.ir/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: İfade Özgürlüğü Derneği
+  url: https://ifade.org.tr/engelliweb/feed/
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: İklim Haber
+  url: https://www.iklimhaber.org/feed/
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: İlke TV
+  url: https://ilketv.com.tr/feed/
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: İnegöl Online
+  url: https://www.e-inegol.com/rss-baglantilari/rss.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: İnternet Haber
+  url: https://www.internethaber.com/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: İstanbul Times
+  url: https://www.istanbultimes.com.tr/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: İstiklal
+  url: https://www.istiklal.com.tr/service/rss.php
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: İşin Detayı
+  url: https://www.isindetayi.com/rss/gundem
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: İşçi Haber
+  url: https://www.iscihaber.net/rss/news
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Journo
+  url: https://journo.com.tr/feed
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Kamudan Haber
+  url: https://www.kamudanhaber.net/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Karar
+  url: https://www.karar.com/service/rss.php
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - feeder
+- ad: Korkusuz
+  url: https://www.korkusuz.com.tr/feeds/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: KRT TV
+  url: https://www.krttv.com.tr/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Kıbrıs Gazetesi
+  url: https://kibrisgazetesi.com.tr/rss.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Kısa Dalga
+  url: https://kisadalga.net/service/rss.php
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Lotus News
+  url: https://www.lotusnews.com.tr/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Malumatfuruş
+  url: https://www.malumatfurus.org/feed/
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Medya Tilkisi
+  url: https://www.medyatilkisi.com.tr/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Medyascope
+  url: https://medyascope.tv/feed/
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+  - feeder
+- ad: Memur Zam Haberleri
+  url: https://memurzamhaber.com.tr/feed/
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - katki
+- ad: Milliyet
+  url: https://www.milliyet.com.tr/rss/rssnew/sondakikarss.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+- ad: Milliyet — Dünya
+  url: https://www.milliyet.com.tr/rss/rssnew/dunyarss.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Mynet
+  url: https://www.mynet.com/haber/rss/sondakika
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - huggingface
+  - wordpresshabertemasi
+- ad: News | Euronews RSS
+  url: https://feeds.feedburner.com/euronews/tr/home
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - feeder
+- ad: NewsLab Turkey
+  url: https://www.newslabturkey.org/feed/
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Notbir
+  url: https://notbir.com.tr/rss.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: NTV
+  url: https://www.ntv.com.tr/gundem.rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - huggingface
+  - wordpresshabertemasi
+  - feeder
+- ad: NTV — Dünya
+  url: https://www.ntv.com.tr/dunya.rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: NTV — Otomobil
+  url: https://www.ntv.com.tr/otomobil.rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: OdaTV
+  url: https://www.odatv.com/rss.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Perspektif
+  url: https://www.perspektif.online/feed/
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Radikal
+  url: https://www.radikal.com.tr/feed/
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Sabah
+  url: https://www.sabah.com.tr/rss/gundem.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - huggingface
+  - wordpresshabertemasi
+- ad: Sabah — Anasayfa
+  url: https://www.sabah.com.tr/rss/anasayfa.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+  - feeder
+- ad: Sabah — Dünya
+  url: https://www.sabah.com.tr/rss/dunya.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Serbestiyet
+  url: https://serbestiyet.com/feed/
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: soL Haber
+  url: https://haber.sol.org.tr/rss.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - huggingface
+- ad: Son 24 Saat
+  url: https://www.ahaber.com.tr/rss/son24saat.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Son Dakika
+  url: https://rss.sondakika.com/rssnew.aspx
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Son Mühür
+  url: https://www.sonmuhur.com/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Sozcu Gazetesi
+  url: https://www.sozcu.com.tr/rss.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Sputnik
+  url: https://anlatilaninotesi.com.tr/export/rss2/archive/index.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Star
+  url: https://www.star.com.tr/rss/rss.asp
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - huggingface
+- ad: Sözcü Astroloji
+  url: https://www.sozcu.com.tr/feeds-rss-category-astroloji
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Sözcü Eğitim
+  url: https://www.sozcu.com.tr/feeds-rss-category-egitim
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Sözcü Gündem
+  url: https://www.sozcu.com.tr/feeds-rss-category-gundem
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - feeder
+- ad: Sözcü Günün İçinden
+  url: https://www.sozcu.com.tr/feeds-rss-category-gunun-icinden
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Sözcü Hayat
+  url: https://www.sozcu.com.tr/feeds-rss-category-hayat
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Sözcü Otomotiv
+  url: https://www.sozcu.com.tr/feeds-rss-category-otomotiv
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Sözcü Resmi İlanlar
+  url: https://www.sozcu.com.tr/feeds-rss-category-resmi-ilanlar
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Sözcü Son Dakika
+  url: https://www.sozcu.com.tr/feeds-son-dakika
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - feeder
+- ad: Sözcü Yazarlar
+  url: https://www.sozcu.com.tr/feeds-rss-category-yazar
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Sözcü — Dünya
+  url: https://www.sozcu.com.tr/rss/dunya.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Sözcü — Gündem
+  url: https://www.sozcu.com.tr/rss/gundem.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Sözcü — Manşet
+  url: https://www.sozcu.com.tr/feeds-rss-category-sozcu
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - huggingface
+- ad: Sözcü — Otomobil
+  url: https://www.sozcu.com.tr/rss/otomobil.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Sözcü — Politika
+  url: https://www.sozcu.com.tr/rss/politika.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Sözcü — Siyaset
+  url: https://www.sozcu.com.tr/rss/siyaset.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Sözcü — Tüm haberler
+  url: https://www.sozcu.com.tr/rss/tum-haberler.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Takvim
+  url: https://www.takvim.com.tr/rss/son24saat.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: TamgaTürk
+  url: https://www.tamgaturk.com/rss.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Tele1
+  url: https://www.tele1.com.tr/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - feeder
+- ad: Tele2
+  url: https://www.tele2haber.com/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Teyit
+  url: https://teyit.org/feed?lang=tr
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: TGRT Haber
+  url: https://www.tgrthaber.com/rss/manset
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: TRT Dünya
+  url: https://www.trthaber.com/dunya_articles.rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+- ad: TRT Haber
+  url: https://www.trthaber.com/sondakika.rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - huggingface
+  - wordpresshabertemasi
+- ad: TRT Haber — Gündem
+  url: https://www.trthaber.com/gundem_articles.rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+  - feeder
+- ad: TV100
+  url: https://www.tv100.com/export/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Türkgün
+  url: https://www.turkgun.com/rss/news
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: TürkInform
+  url: https://turkinform.com.tr/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Türkiye Gazetesi
+  url: https://www.turkiyegazetesi.com.tr/feed
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Ulus Gazetesi
+  url: https://www.ulusgazetesi.com/rss.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Ulusal Kanal
+  url: https://www.ulusal.com.tr/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Ulusal Post
+  url: https://www.ulusalpost.com/service/rss.php
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Veryansın TV
+  url: https://www.veryansintv.com/feed
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Vira Haber
+  url: https://www.virahaber.com/rss/
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Yaşadıkça
+  url: https://yasadikca.com/feed/
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Yeni Akit
+  url: https://www.yeniakit.com.tr/rss/haber/gundem
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Yeni Asır Gazetesi
+  url: https://www.yeniasir.com.tr/rss/anasayfa.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Yeni Şafak
+  url: https://www.yenisafak.com/rss?xml=gundem
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - huggingface
+  - wordpresshabertemasi
+- ad: Yeni Şafak — Dünya
+  url: https://www.yenisafak.com/rss?xml=dunya
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Yenice İda
+  url: https://yeniceida.com/rss
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Yeniçağ Gazetesi
+  url: https://www.yenicaggazetesi.com.tr/service/rss.php
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Yetkin Report
+  url: https://yetkinreport.com/feed/
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+  - feeder
+- ad: Yeşil Gazete
+  url: https://yesilgazete.org/feed/
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Yurt Gazetesi
+  url: https://www.yurtgazetesi.com.tr/service/rss.php
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Yurtsever
+  url: https://yurtsever.org.tr/feed
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: Özgün Manşet
+  url: https://www.ozgunmanset.com/rss/guncel
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - github
+- ad: ÖZYALVAÇ
+  url: https://www.ozyalvac.com/feed
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Şanlı Bayrak Gazetesi
+  url: https://sanlibayrakgazetesi.com/rss.xml
+  kategori: gundem
+  tur: rss
+  kaynak:
+  - katki
+- ad: A Spor
+  url: https://www.aspor.com.tr/rss/anasayfa.xml
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: AjansSpor
+  url: https://ajansspor.com/rss
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: Anadolu Ajansı — Spor
+  url: https://www.aa.com.tr/tr/rss/default?cat=spor
+  kategori: spor
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Basket Dergisi
+  url: https://basketdergisi.com/feed
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: CNN Türk Spor
+  url: https://www.cnnturk.com/feed/rss/spor/news
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+- ad: Cumhuriyet — Spor
+  url: https://www.cumhuriyet.com.tr/rss/spor
+  kategori: spor
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Duhuliye
+  url: https://www.duhuliye.com/rss
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: Fotomaç Basketbol
+  url: https://www.fotomac.com.tr/rss/Basketbol.xml
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: Fotomaç Beşiktaş
+  url: https://www.fotomac.com.tr/rss/Besiktas.xml
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: Fotomaç Fenerbahçe
+  url: https://www.fotomac.com.tr/rss/Fenerbahce.xml
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: Fotomaç Galatasaray
+  url: https://www.fotomac.com.tr/rss/Galatasaray.xml
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: Fotomaç Son 24 Saat
+  url: https://www.fotomac.com.tr/rss/son24saat.xml
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: Fotomaç Süper Lig
+  url: https://www.fotomac.com.tr/rss/SuperLig.xml
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: Fotomaç Trabzonspor
+  url: https://www.fotomac.com.tr/rss/Trabzonspor.xml
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: Fotospor
+  url: https://www.fotospor.com/feed/rss_sondakika.xml
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: Futboo
+  url: https://www.futboo.com/rss.xml
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: Galatasaray
+  url: https://www.galatasaray.org/xml/gs.rss
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+  - feeder
+- ad: Haber Ege — Spor
+  url: https://www.haberege.com.tr/rss/spor
+  kategori: spor
+  tur: rss
+  kaynak:
+  - katki
+- ad: Habertürk — Spor
+  url: https://www.haberturk.com/rss/spor.xml
+  kategori: spor
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Hürriyet — Spor
+  url: https://www.hurriyet.com.tr/rss/spor
+  kategori: spor
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: NTV Spor Anasayfa
+  url: https://www.ntvspor.net/rss/anasayfa
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+- ad: NTV Spor Basketbol
+  url: https://www.ntvspor.net/rss/kategori/basketbol
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: NTV Spor Diğer Sporlar
+  url: https://www.ntvspor.net/rss/kategori/diger-sporlar
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: NTV Spor Dünyadan Futbol
+  url: https://www.ntvspor.net/rss/kategori/dunyadan-futbol
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: NTV Spor Futbol
+  url: https://www.ntvspor.net/rss/kategori/futbol
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: NTV Spor Motor Sporları
+  url: https://www.ntvspor.net/rss/kategori/motor-sporlari
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: NTV Spor Tenis
+  url: https://www.ntvspor.net/rss/kategori/tenis
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: NTV Spor Voleybol
+  url: https://www.ntvspor.net/rss/kategori/voleybol
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: Orta Çizgi
+  url: https://ortacizgi.com/feed
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: Sabah Spor
+  url: https://www.sabah.com.tr/rss/spor.xml
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+- ad: Sözcü Basketbol
+  url: https://www.sozcu.com.tr/feeds-rss-category-basketbol
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: Sözcü Diğer Sporlar
+  url: https://www.sozcu.com.tr/feeds-rss-category-diger-sporlar
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: Sözcü Dünyadan Futbol
+  url: https://www.sozcu.com.tr/feeds-rss-category-dunyadan-spor
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: Sözcü Futbol
+  url: https://www.sozcu.com.tr/feeds-rss-category-futbol
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: Sözcü Spor
+  url: https://www.sozcu.com.tr/feeds-rss-category-spor
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: Sözcü Voleybol
+  url: https://www.sozcu.com.tr/feeds-rss-category-voleybol
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: Sözcü — Spor
+  url: https://www.sozcu.com.tr/rss/spor.xml
+  kategori: spor
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: TRT Spor
+  url: https://www.trthaber.com/spor_articles.rss
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+- ad: Türkiyede ve Dünyada Golf
+  url: https://www.turkiyedevedunyadagolf.com.tr/feed/
+  kategori: spor
+  tur: rss
+  kaynak:
+  - github
+- ad: Yeni Şafak — Spor
+  url: https://www.yenisafak.com/rss?xml=spor
+  kategori: spor
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Anadolu Ajansı — Ekonomi
+  url: https://www.aa.com.tr/tr/rss/default?cat=ekonomi
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Analiz Gazetesi — Altın
+  url: https://analizgazetesi.com.tr/modules/blog/rss.php?cid=14
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - katki
+- ad: Analiz Gazetesi — Bankacılık
+  url: https://analizgazetesi.com.tr/modules/blog/rss.php?cid=10
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - katki
+- ad: Analiz Gazetesi — Borsa
+  url: https://analizgazetesi.com.tr/modules/blog/rss.php?cid=12
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - katki
+- ad: Analiz Gazetesi — Döviz
+  url: https://analizgazetesi.com.tr/modules/blog/rss.php?cid=13
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - katki
+- ad: Analiz Gazetesi — Ekonomi
+  url: https://analizgazetesi.com.tr/modules/blog/rss.php?cid=1
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - katki
+- ad: Analiz Gazetesi — Enerji ve emtia
+  url: https://analizgazetesi.com.tr/modules/blog/rss.php?cid=16
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - katki
+- ad: Analiz Gazetesi — Finans
+  url: https://analizgazetesi.com.tr/modules/blog/rss.php?cid=2
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - katki
+- ad: Analiz Gazetesi — Makroekonomi
+  url: https://analizgazetesi.com.tr/modules/blog/rss.php?cid=8
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - katki
+- ad: Bloomberg HT
+  url: https://www.bloomberght.com/rss
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+- ad: CNBC-e
+  url: https://www.cnbce.com/rss
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+- ad: CNN Türk Ekonomi
+  url: https://www.cnnturk.com/feed/rss/ekonomi/news
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+  - feeder
+- ad: Cumhuriyet — Ekonomi
+  url: https://www.cumhuriyet.com.tr/rss/ekonomi
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Döviz
+  url: https://www.doviz.com/news/rss
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+- ad: Dünya
+  url: https://www.dunya.com/rss?dunya
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+- ad: Dünya Gazetesi
+  url: https://www.dunya.com/rss
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Ekonomi Gazetesi
+  url: https://www.ekonomigazetesi.com/rss.xml
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+- ad: Ekonomim
+  url: https://www.ekonomim.com/export/rss
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+- ad: Ekonomim — Kripto
+  url: https://www.ekonomim.com/rss?kripto
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Ekonomist
+  url: https://www.ekonomist.com.tr/rss
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+- ad: Ekovitrin
+  url: https://www.ekovitrin.com/rss
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - katki
+- ad: Enerji Ekonomisi
+  url: https://www.enerjiekonomisi.com/rss
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - katki
+- ad: Forbes Türkiye
+  url: https://www.forbes.com.tr/rss
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+  - feeder
+- ad: Foreks
+  url: https://www.foreks.com/rss/
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+- ad: Fortune Türkiye
+  url: https://www.fortuneturkey.com/feed
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+- ad: Haber Ege — Ekonomi
+  url: https://www.haberege.com.tr/rss/ekonomi
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - katki
+- ad: Habertürk Ekonomi
+  url: https://www.haberturk.com/rss/ekonomi.xml
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+  - feeder
+- ad: Hürriyet — Ekonomi
+  url: https://www.hurriyet.com.tr/rss/ekonomi
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Investing Döviz
+  url: https://tr.investing.com/rss/forex.rss
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+- ad: Investing Emtia
+  url: https://tr.investing.com/rss/commodities.rss
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+- ad: Investing Genel
+  url: https://tr.investing.com/rss/market_overview.rss
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+- ad: Investing Haberler
+  url: https://tr.investing.com/rss/news.rss
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+- ad: Investing Hisse Senedi
+  url: https://tr.investing.com/rss/stock.rss
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+- ad: Investing Kripto
+  url: https://tr.investing.com/rss/302.rss
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+- ad: Investing Tahvil
+  url: https://tr.investing.com/rss/bonds.rss
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+- ad: Kripto para siteleri — Bitcoin Sistemi
+  url: https://www.bitcoinsistemi.com/feed/
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Kripto para siteleri — BTCHaber
+  url: https://www.btchaber.com/feed/
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Kripto para siteleri — Coinkolik
+  url: https://coinkolik.com/feed/
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Kripto para siteleri — CoinTürk
+  url: https://www.coin-turk.com/feed
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Kripto para siteleri — Koin Bülteni
+  url: https://koinbulteni.com/feed
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Kripto para siteleri — Kripto Para Haber
+  url: https://www.kriptoparahaber.com/feed
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Kripto para siteleri — Uzmancoin
+  url: https://uzmancoin.com/feed/
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: NTV Ekonomi
+  url: https://www.ntv.com.tr/ekonomi.rss
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+- ad: NTV Para
+  url: https://www.ntv.com.tr/ntvpara.rss
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+- ad: Para Dergi Finans
+  url: https://www.paradergi.com.tr/rss/finans.xml
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+- ad: ParaMedya
+  url: https://www.paramedya.com/feed/
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - katki
+- ad: Patronlar Dünyası Ekonomi
+  url: https://www.patronlardunyasi.com/rss/ekonomi
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+- ad: Patronlar Dünyası Finans
+  url: https://www.patronlardunyasi.com/rss/finans
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+- ad: Sabah — Ekonomi
+  url: https://www.sabah.com.tr/rss/ekonomi.xml
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Sözcü Borsa
+  url: https://www.sozcu.com.tr/feeds-rss-category-borsa
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+- ad: Sözcü Ekonomi
+  url: https://www.sozcu.com.tr/feeds-rss-category-ekonomi
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+- ad: Sözcü Emlak
+  url: https://www.sozcu.com.tr/feeds-rss-category-emlak
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+- ad: Sözcü Emtia
+  url: https://www.sozcu.com.tr/feeds-rss-category-emtia
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+- ad: Sözcü Finans
+  url: https://www.sozcu.com.tr/feeds-rss-category-finans
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+- ad: Sözcü Kripto
+  url: https://www.sozcu.com.tr/feeds-rss-category-kripto
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+- ad: Sözcü — Ekonomi
+  url: https://www.sozcu.com.tr/rss/ekonomi.xml
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Sözcü — Kripto
+  url: https://www.sozcu.com.tr/rss/kripto-para.xml
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: TRT Ekonomi
+  url: https://www.trthaber.com/ekonomi_articles.rss
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+- ad: Ulus Gazetesi Ekonomi
+  url: https://www.ulusgazetesi.com/rss/ekonomi.xml
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - github
+- ad: Yeni Şafak — Ekonomi
+  url: https://www.yenisafak.com/rss?xml=ekonomi
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Yeşil Ekonomi
+  url: https://yesilekonomi.com/feed/
+  kategori: ekonomi
+  tur: rss
+  kaynak:
+  - feeder
+- ad: 2N Haber Teknoloji
+  url: https://2nhaber.com/category/nasil/feed/
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: Anadolu Ajansı — Bilim-Teknoloji
+  url: https://www.aa.com.tr/tr/rss/default?cat=bilim-teknoloji
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Campaign Türkiye
+  url: https://www.campaigntr.com/feed/
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: CHIP Online
+  url: https://www.chip.com.tr/rss
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+- ad: CNN Türk — Teknoloji
+  url: https://www.cnnturk.com/feed/rss/teknoloji/news
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Cumhuriyet — Bilim-Teknoloji
+  url: https://www.cumhuriyet.com.tr/rss/bilim-teknoloji
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Digital Report
+  url: https://digitalreport.com.tr/feed/
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: Dijiport Haber
+  url: https://www.dijiporthaber.com/feed/
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - katki
+- ad: Dijitaliyidir
+  url: https://dijitaliyidir.com/feed/
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: Donanım Günlüğü
+  url: https://donanimgunlugu.com/feed
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: Donanım Haber
+  url: https://www.donanimhaber.com/rss/tum/
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+- ad: FounderN
+  url: https://foundern.com/feed/
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: Geç Bunları
+  url: https://gecbunlari.com/feed/
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: Haber Ege — Bilim ve teknoloji
+  url: https://www.haberege.com.tr/rss/bilim-ve-teknoloji
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - katki
+- ad: Habertürk — Teknoloji
+  url: https://www.haberturk.com/rss/teknoloji.xml
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Hardware Plus
+  url: https://hwp.com.tr/feed
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+  - feeder
+- ad: Hürriyet — Teknoloji
+  url: https://www.hurriyet.com.tr/rss/teknoloji
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Investing Teknoloji
+  url: https://tr.investing.com/rss/news_288.rss
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: İndir
+  url: https://www.indir.com/haber/feed/
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: LOG
+  url: https://www.log.com.tr/feed/
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+- ad: Megabayt
+  url: https://www.megabayt.com/rss/news
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: Milliyet — Teknoloji
+  url: https://www.milliyet.com.tr/rss/rssnew/teknolojirss.xml
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: NTV Teknoloji
+  url: https://www.ntv.com.tr/teknoloji.rss
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+- ad: Patronlar Dünyası Teknoloji
+  url: https://www.patronlardunyasi.com/rss/teknoloji
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: Samsung Newsroom Türkiye
+  url: https://news.samsung.com/tr/feed
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: ShiftDelete
+  url: https://shiftdelete.net/feed
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+- ad: Sihirli Elma
+  url: https://www.sihirlielma.com/feed/
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: Sordum
+  url: https://www.sordum.net/feed/
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: Swipeline
+  url: https://swipeline.co/feed/
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+  - feeder
+- ad: Sözcü Bilim ve Teknoloji
+  url: https://www.sozcu.com.tr/feeds-rss-category-bilim-teknoloji
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: Sözcü — Teknoloji
+  url: https://www.sozcu.com.tr/rss/teknoloji.xml
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Tam İndir
+  url: https://feeds.feedburner.com/tamindir/stream
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: Tech Dergi
+  url: https://www.techdergi.net/feed/
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: TechInside
+  url: https://www.techinside.com/feed
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - katki
+- ad: Technopat
+  url: https://www.technopat.net/feed/
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+- ad: Techolay
+  url: https://techolay.net/feed/
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: TechTurco
+  url: https://www.techturco.com/rss
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: Teknoblog
+  url: https://www.teknoblog.com/feed/
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: TeknoBurada
+  url: https://www.teknoburada.net/feed/
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: Teknodiot
+  url: https://teknodiot.com/feed/
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: Teknolojioku
+  url: https://www.teknolojioku.com/export/rss
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: TRT Haber — Bilim-Teknoloji
+  url: https://www.trthaber.com/bilim_teknoloji_articles.rss
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Türk İnternet
+  url: https://turk-internet.com/feed/
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: Upcorn
+  url: https://upcorn.co/feed/
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: VoiceTekno
+  url: https://voicetekno.com/feed/
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: Webmasto
+  url: https://webmasto.com/feed
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: Webrazzi
+  url: https://webrazzi.com/feed
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+  - feeder
+- ad: Webrazzi Dijital
+  url: https://webrazzi.com/kategori/dijital/feed
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: Webrazzi Teknoloji
+  url: https://webrazzi.com/kategori/teknoloji/feed
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: Webrazzi Yapay Zeka
+  url: https://webrazzi.com/kategori/yapay-zeka/feed
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+- ad: Webtekno
+  url: https://www.webtekno.com/rss.xml
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+  - feeder
+- ad: Yeni Şafak — Teknoloji
+  url: https://www.yenisafak.com/rss?xml=teknoloji
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: ÇözümPark
+  url: https://www.cozumpark.com/feed/
+  kategori: teknoloji
+  tur: rss
+  kaynak:
+  - github
+  - feeder
+- ad: 2N Haber Bilim
+  url: https://2nhaber.com/category/neden/feed/
+  kategori: bilim
+  tur: rss
+  kaynak:
+  - github
+- ad: Arkeofili
+  url: https://arkeofili.com/feed/
+  kategori: bilim
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+  - feeder
+- ad: Bilim ve Gelecek
+  url: https://bilimvegelecek.com.tr/index.php/feed/
+  kategori: bilim
+  tur: rss
+  kaynak:
+  - github
+- ad: Bilimup
+  url: https://www.bilimup.com/rss.xml
+  kategori: bilim
+  tur: rss
+  kaynak:
+  - github
+- ad: Evrim Ağacı
+  url: https://evrimagaci.org/rss.xml
+  kategori: bilim
+  tur: rss
+  kaynak:
+  - github
+- ad: Gelecek Bilimde
+  url: https://gelecekbilimde.net/feed/
+  kategori: bilim
+  tur: rss
+  kaynak:
+  - github
+- ad: Gerçek Bilim
+  url: https://www.gercekbilim.com/feed/
+  kategori: bilim
+  tur: rss
+  kaynak:
+  - github
+- ad: Herkese Bilim Teknoloji
+  url: https://www.herkesebilimteknoloji.com/feed
+  kategori: bilim
+  tur: rss
+  kaynak:
+  - github
+- ad: Matematiksel
+  url: https://www.matematiksel.org/feed
+  kategori: bilim
+  tur: rss
+  kaynak:
+  - github
+- ad: Moletik
+  url: https://moletik.com/feed/
+  kategori: bilim
+  tur: rss
+  kaynak:
+  - github
+- ad: Sarkaç
+  url: https://sarkac.org/feed/
+  kategori: bilim
+  tur: rss
+  kaynak:
+  - github
+  - feeder
+- ad: Tarihli Bilim
+  url: https://www.tarihlibilim.com/feed/
+  kategori: bilim
+  tur: rss
+  kaynak:
+  - github
+- ad: Tarihten Yazılar
+  url: https://tarihtenyazilar.com/feed/
+  kategori: bilim
+  tur: rss
+  kaynak:
+  - github
+- ad: 10layn
+  url: https://10layn.com/feed/
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: 2yaka
+  url: https://2yaka.org/feed/
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Anadolu Ajansı — Kültür
+  url: https://www.aa.com.tr/tr/rss/default?cat=kultur
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Argonotlar
+  url: https://argonotlar.com/feed/
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Arkitera
+  url: https://www.arkitera.com/feed/
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Artdog
+  url: https://artdogistanbul.com/feed/
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Artkolik
+  url: https://www.artkolik.net/feed
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Bant Mag
+  url: https://bantmag.com/feed/
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Bir Baba Indie
+  url: https://www.birbabaindie.com/feed/
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Cafrande
+  url: https://www.cafrande.org/feed/
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Cazkolik
+  url: https://cazkolik.com/rss.xml
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: DeliKasap
+  url: https://www.delikasap.org/feed/
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Edebiyat Burada
+  url: https://edebiyatburada.com/feed/
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Edebiyat Haber
+  url: https://www.edebiyathaber.net/feed/
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: EkoYapı Dergisi
+  url: https://www.ekoyapidergisi.org/feed/
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Fikir Turu
+  url: https://fikirturu.com/feed/
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Gazete Sanat
+  url: https://www.gazetesanat.com/feed
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Görünüm Dergisi
+  url: https://dergipark.org.tr/tr/pub/gorunum/rss/lastissue/tr
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Haber Ege — Kültür sanat
+  url: https://www.haberege.com.tr/rss/kultur-sanat
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - katki
+- ad: Hafta
+  url: https://www.hafta.com.tr/rss.xml
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: İşin Detayı Kültür Sanat
+  url: https://www.isindetayi.com/rss/kultur-sanat
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Kayıp Rıhtım Haftalık Kitap Önerisi
+  url: https://kayiprihtim.com/category/kayip-rihtim/kayip-rihtim-oneriyor/feed/
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Kilikya Dergisi
+  url: https://dergipark.org.tr/tr/pub/kilikya/rss/lastissue/tr
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Kitap Haber
+  url: https://www.kitaphaber.com.tr/feed
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Manifold
+  url: https://manifold.press/rss
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Mimarizm
+  url: https://www.mimarizm.com/RSS/Content.aspx
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Mürekkep Haber
+  url: https://www.murekkephaber.com/rss.xml
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Nouvart
+  url: https://www.nouvart.net/feed/
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Play Tuşu
+  url: https://playtusu.com/feed/
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Rotka
+  url: https://www.rotka.org/feed/
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Sözcü Kültür Sanat
+  url: https://www.sozcu.com.tr/feeds-rss-category-kultur-sanat
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Tarihistan
+  url: https://www.tarihistan.org/rss
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Terrabayt
+  url: https://terrabayt.com/feed
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: TRT Haber — Kültür-Sanat
+  url: https://www.trthaber.com/kultur_sanat_articles.rss
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Vesaire
+  url: https://vesaire.press/feed/
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Yedikıta
+  url: https://yedikita.com.tr/feed/
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Öncül
+  url: https://onculanalitikfelsefe.com/feed/
+  kategori: kultur-sanat
+  tur: rss
+  kaynak:
+  - github
+- ad: Anne Kaz
+  url: https://www.annekaz.com/feed
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - github
+- ad: CNN Türk — Sağlık
+  url: https://www.cnnturk.com/feed/rss/saglik/news
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Cumhuriyet — Sağlık
+  url: https://www.cumhuriyet.com.tr/rss/saglik
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Cumhuriyet — Yaşam
+  url: https://www.cumhuriyet.com.tr/rss/yasam
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Elele
+  url: https://www.elele.com.tr/export/rss
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - github
+- ad: Elle Türkiye
+  url: https://www.elle.com.tr/rss
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - github
+- ad: Euronews Seyahat
+  url: https://tr.euronews.com/rss?level=vertical&name=travel
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - github
+- ad: Gardırop Magazin
+  url: https://www.gardiropmagazin.com/feed/
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - github
+- ad: Güzellik Yayında
+  url: https://guzellikyayinda.com/feed/
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - github
+- ad: Haber Ege — Sağlık
+  url: https://www.haberege.com.tr/rss/saglik
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - katki
+- ad: Harper's Bazaar Türkiye
+  url: https://www.harpersbazaar.com.tr/feed/
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - github
+- ad: Hürriyet — Yaşam
+  url: https://www.hurriyet.com.tr/rss/yasam
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: İşin Detayı Gastronomi
+  url: https://www.isindetayi.com/rss/gastronomi
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - github
+- ad: İşin Detayı Moda
+  url: https://www.isindetayi.com/rss/moda
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - github
+- ad: İşin Detayı Sağlık
+  url: https://www.isindetayi.com/rss/saglik
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - github
+- ad: İşin Detayı Turizm
+  url: https://www.isindetayi.com/rss/turizm
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - github
+- ad: Live To Bloom
+  url: https://livetobloom.com/feed/
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - github
+- ad: Marie Claire
+  url: https://www.marieclaire.com.tr/feed/
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - github
+- ad: Martı Dergisi
+  url: https://www.martidergisi.com/feed/
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - github
+- ad: Medium Türkiye Yayını
+  url: https://mediumturkiye.com/feed
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - github
+- ad: Medium Türkçe Yayın
+  url: https://medium.com/feed/t%C3%BCrkiye
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - github
+- ad: Milliyet — Yaşam
+  url: https://www.milliyet.com.tr/rss/rssnew/yasamrss.xml
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: NTV Yaşam
+  url: https://www.ntv.com.tr/yasam.rss
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - github
+- ad: NTV — Sağlık
+  url: https://www.ntv.com.tr/saglik.rss
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Outdoor Türkiye
+  url: https://www.outdoorturkiye.com.tr/feed/
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - github
+- ad: PlumeMag
+  url: https://www.plumemag.com/feed/
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - github
+- ad: Sabah — Sağlık
+  url: https://www.sabah.com.tr/rss/saglik.xml
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Sabah — Yaşam
+  url: https://www.sabah.com.tr/rss/yasam.xml
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Sözcü Sağlık
+  url: https://www.sozcu.com.tr/feeds-rss-category-saglik
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - github
+- ad: Sözcü Yaşam
+  url: https://www.sozcu.com.tr/feeds-rss-category-yasam
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - github
+- ad: Sözcü — Sağlık
+  url: https://www.sozcu.com.tr/rss/saglik.xml
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Trendus
+  url: https://www.trendus.com/feed
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - github
+- ad: TRT Haber — Sağlık
+  url: https://www.trthaber.com/saglik_articles.rss
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: TRT Yaşam
+  url: https://www.trthaber.com/yasam_articles.rss
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - github
+  - wordpresshabertemasi
+- ad: Uplifers
+  url: https://www.uplifers.com/feed/
+  kategori: yasam
+  tur: rss
+  kaynak:
+  - github
+- ad: 22 Dakika
+  url: https://22dakika.org/feed/
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Altyazı
+  url: https://altyazi.net/feed/
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Atarita
+  url: https://www.atarita.com/feed/
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Bağımsız Sinema
+  url: https://www.bagimsizsinema.com/feed
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Beyaz Perde
+  url: https://www.beyazperde.com/rss/haberler.xml
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Bigumigu
+  url: https://bigumigu.com/feed/
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Bilimkurgu Kulübü
+  url: https://www.bilimkurgukulubu.com/feed/
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Ekşi Şeyler
+  url: https://news.google.com/rss/search?q=site:eksiseyler.com+when:7d&hl=tr&gl=TR&ceid=TR:tr
+  kategori: eglence
+  tur: uretilen
+  kaynak:
+  - github
+- ad: Fantastik Canavarlar
+  url: https://fantastikcanavarlar.com/feed/
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Fanzade
+  url: https://fanzade.com/feed/
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: FRPNET
+  url: https://frpnet.net/feed
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Geekyapar
+  url: https://geekyapar.com/feed/
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Haber Ege — Magazin
+  url: https://www.haberege.com.tr/rss/magazin
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - katki
+- ad: Habertürk — Magazin
+  url: https://www.haberturk.com/rss/magazin.xml
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+  - feeder
+- ad: Hürriyet — Kelebek
+  url: https://www.hurriyet.com.tr/rss/kelebek
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Hürriyet — Magazin
+  url: https://www.hurriyet.com.tr/rss/magazin
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: IGN Türkiye
+  url: https://tr.ign.com/feed.xml
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Kayıp Rıhtım
+  url: https://kayiprihtim.com/feed/
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Keşif Asya
+  url: https://kesifasya.com/feed/
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: ListeList
+  url: https://listelist.com/feed/
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Marjinal Sinema
+  url: https://marjinalsinema.com/feed/
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Merlin'in Kazanı
+  url: https://www.merlininkazani.com/feed/
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Milliyet — Magazin
+  url: https://www.milliyet.com.tr/rss/rssnew/magazinrss.xml
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Mixmag Turkey
+  url: https://mixmag.com.tr/rss.xml
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Mobidictum
+  url: https://mobidictum.com/tr/feed/
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Onedio
+  url: https://onedio.com/Publisher/publisher-daily.rss
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Oyungezer
+  url: https://oyungezer.com.tr/rss
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Sabah — Magazin
+  url: https://www.sabah.com.tr/rss/magazin.xml
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Sinetopya
+  url: https://sinetopya.com/rss/
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Sofos
+  url: https://blog.sofos.com.tr/feed/
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Sözcü Magazin
+  url: https://www.sozcu.com.tr/feeds-rss-category-magazin
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Sözcü — Magazin
+  url: https://www.sozcu.com.tr/rss/magazin.xml
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - wordpresshabertemasi
+- ad: Taraftar Haber
+  url: https://taraftarhaber.com.tr/rss.xml
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Tourens
+  url: https://tourens.com/feed/
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Turkmmo
+  url: https://www.turkmmo.com/feed
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Öteki Sinema
+  url: https://www.otekisinema.com/feed/
+  kategori: eglence
+  tur: rss
+  kaynak:
+  - github
+- ad: Analiz Gazetesi — İhracat
+  url: https://analizgazetesi.com.tr/modules/blog/rss.php?cid=6
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - katki
+- ad: Analiz Gazetesi — İş dünyası
+  url: https://analizgazetesi.com.tr/modules/blog/rss.php?cid=7
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - katki
+- ad: AVM Dergi
+  url: https://www.avmdergi.com/feed/
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - katki
+- ad: AVM Life
+  url: https://avmlife.com.tr/rss
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - katki
+- ad: Bisektör
+  url: https://www.bisektor.com/feed/
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - katki
+- ad: Borsanın Gündemi
+  url: https://www.borsaningundemi.com/rss
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - github
+- ad: Business World Global
+  url: https://businessworldglobal.com/feed/
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - katki
+- ad: Capital
+  url: https://www.capital.com.tr/rss/all
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - github
+  - feeder
+- ad: Euronews Business
+  url: https://tr.euronews.com/rss?level=theme&name=business
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - github
+- ad: Euronews İş Dünyası
+  url: https://tr.euronews.com/rss?level=vertical&name=business
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - github
+- ad: Finans Gündem
+  url: https://www.finansingundemi.com/rss
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - github
+- ad: Halka Arz
+  url: https://halkarz.com/feed/
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - github
+- ad: Horeca Trend
+  url: https://www.horecatrend.com/feed/
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - katki
+- ad: INC Türkiye
+  url: https://incturkiye.com/story-feeds
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - github
+- ad: İşin Detayı
+  url: https://www.isindetayi.com/rss
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - github
+- ad: İşin Detayı Borsa
+  url: https://www.isindetayi.com/rss/borsa
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - github
+- ad: İşin Detayı Ekonomi
+  url: https://www.isindetayi.com/rss/ekonomi
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - github
+- ad: İşin Detayı Finans
+  url: https://www.isindetayi.com/rss/finans
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - github
+- ad: İşin Detayı Gayrimenkul
+  url: https://www.isindetayi.com/rss/gayrimenkul
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - github
+- ad: İşin Detayı İş Dünyası
+  url: https://www.isindetayi.com/rss/is-dunyasi
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - github
+- ad: İşin Detayı Lojistik
+  url: https://www.isindetayi.com/rss/lojistik
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - github
+- ad: İşin Detayı Şirket Haberleri
+  url: https://www.isindetayi.com/rss/sirket-haberleri
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - github
+- ad: Midas
+  url: https://www.getmidas.com/feed/
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - github
+- ad: Mynet Finans
+  url: https://www.mynet.com/rss/publisher-finans.rss
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - github
+- ad: Para Dergi
+  url: https://www.paradergi.com.tr/rss/anasayfa.xml
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - github
+- ad: Para Dergi Girişimcilik
+  url: https://www.paradergi.com.tr/rss/girisimcilik.xml
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - github
+- ad: Para Dergi İş Dünyası Kulis
+  url: https://www.paradergi.com.tr/rss/is-dunyasi-kulis.xml
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - github
+- ad: Paranın Yönü
+  url: https://www.paraninyonu.com.tr/rss.xml
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - github
+- ad: Patronlar Dünyası Patronlar
+  url: https://www.patronlardunyasi.com/rss/patronlar
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - github
+- ad: Perakende.org
+  url: https://perakende.org/feed/
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - katki
+- ad: ST Endüstri
+  url: https://www.stendustri.com.tr/rss
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - katki
+- ad: Webrazzi Yatırım
+  url: https://webrazzi.com/kategori/yatirim/feed
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - github
+- ad: Yangın ve Güvenlik Dergisi
+  url: https://www.yanginguvenlik.com.tr/rss.xml
+  kategori: is-dunyasi
+  tur: rss
+  kaynak:
+  - katki
+- ad: C4 Defence
+  url: https://www.c4defence.com/tr/feed/
+  kategori: savunma
+  tur: rss
+  kaynak:
+  - github
+- ad: DefenceTurk
+  url: https://www.defenceturk.net/feed
+  kategori: savunma
+  tur: rss
+  kaynak:
+  - github
+  - feeder
+- ad: Mavi Savunma
+  url: https://mavisavunma.com/feed/
+  kategori: savunma
+  tur: rss
+  kaynak:
+  - github
+- ad: Sanayi Gazetesi
+  url: https://sanayigazetesi.com.tr/kategori/savunma-haberleri/feed/
+  kategori: savunma
+  tur: rss
+  kaynak:
+  - github
+- ad: Savunma Sanayi Gazetesi
+  url: https://savunmasanayigazetesi.com.tr/feed/
+  kategori: savunma
+  tur: rss
+  kaynak:
+  - github
+- ad: SavunmaSanayiST
+  url: https://www.savunmasanayist.com/feed/
+  kategori: savunma
+  tur: rss
+  kaynak:
+  - github
+  - feeder
+- ad: SavunmaTR
+  url: https://www.savunmatr.com/feed/
+  kategori: savunma
+  tur: rss
+  kaynak:
+  - github
+- ad: Bilgi Teknolojileri ve İletişim Kurumu
+  url: https://www.btk.gov.tr/rss/announcements
+  kategori: resmi
+  tur: rss
+  kaynak:
+  - feeder
+- ad: TÜBİTAK
+  url: https://www.tubitak.gov.tr/rss.xml
+  kategori: resmi
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Ajans32.com
+  url: https://www.ajans32.com/service/rss.php
+  kategori: yerel
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Antalya Hakkında
+  url: https://www.antalyahakkinda.com/rss
+  kategori: yerel
+  tur: rss
+  kaynak:
+  - katki
+- ad: Bomba 32
+  url: https://www.bomba32.com/rss
+  kategori: yerel
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Doğu Gazetesi (Erzincan)
+  url: https://www.dogugazetesi.com/rss
+  kategori: yerel
+  tur: rss
+  kaynak:
+  - katki
+- ad: Gazete 32
+  url: https://www.gazete32.com.tr/feed/
+  kategori: yerel
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Haber Ege
+  url: https://www.haberege.com.tr/rss
+  kategori: yerel
+  tur: rss
+  kaynak:
+  - katki
+- ad: Haber Ege — Ege haberleri
+  url: https://www.haberege.com.tr/rss/ege-haberleri
+  kategori: yerel
+  tur: rss
+  kaynak:
+  - katki
+- ad: Haber Ege — İzmir
+  url: https://www.haberege.com.tr/rss/izmir
+  kategori: yerel
+  tur: rss
+  kaynak:
+  - katki
+- ad: Isparta Haber
+  url: https://www.haber32.com.tr/rss
+  kategori: yerel
+  tur: rss
+  kaynak:
+  - feeder
+- ad: ISPARTA HABER
+  url: https://www.ispartahaber.com.tr/rss
+  kategori: yerel
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Ispartanın Dünyaya açılan Penceresi Isparta Manşet
+  url: https://www.ispartamanset.com/rss.xml
+  kategori: yerel
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Kanal 32
+  url: https://www.kanal32.com.tr/rss.xml
+  kategori: yerel
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Konya Aktüel
+  url: https://konyaaktuel.com.tr/rss.xml
+  kategori: yerel
+  tur: rss
+  kaynak:
+  - katki
+- ad: Konya Aktüel — Şehir
+  url: https://konyaaktuel.com.tr/rss/sehir.xml
+  kategori: yerel
+  tur: rss
+  kaynak:
+  - katki
+- ad: Medya32 - ISPARTA HABERLERİ
+  url: https://medya32.com/rss.xml
+  kategori: yerel
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Muhbir 32
+  url: https://muhbir32.com/feed/
+  kategori: yerel
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Son Dakika Haberleri
+  url: https://sondakika32.com/rss/son-dakika.xml
+  kategori: yerel
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Son Dakika Isparta Haberleri
+  url: https://www.son32.com/rss
+  kategori: yerel
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Uyan32
+  url: https://www.uyan32.com/rss
+  kategori: yerel
+  tur: rss
+  kaynak:
+  - github
+  - feeder
+- ad: ÖnTürk TV (Balıkesir)
+  url: https://www.onturk.tv/rss.xml
+  kategori: yerel
+  tur: rss
+  kaynak:
+  - katki
+- ad: ÖnTürk TV — Balıkesir haberleri
+  url: https://www.onturk.tv/rss_balikesir-haberleri_33.xml
+  kategori: yerel
+  tur: rss
+  kaynak:
+  - katki
+- ad: 140journos
+  url: https://www.youtube.com/feeds/videos.xml?channel_id=UCO-_F5ZEUhy0oKrSa69DLMw
+  kategori: video
+  tur: rss
+  kaynak:
+  - feeder
+- ad: 49W
+  url: https://www.youtube.com/feeds/videos.xml?channel_id=UC5_0UPuXT5SAGsbTe2T_PJg
+  kategori: video
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Anka Haber Ajansı
+  url: https://www.youtube.com/feeds/videos.xml?channel_id=UCO9AQtN33IP53uiImJ_59OQ
+  kategori: video
+  tur: rss
+  kaynak:
+  - feeder
+- ad: DW Türkçe
+  url: https://www.youtube.com/feeds/videos.xml?channel_id=UCpi_jv70749NkAmkdugyiPQ
+  kategori: video
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Ekin Kollama
+  url: https://www.youtube.com/feeds/videos.xml?channel_id=UCGwKgTyNa0jE1GZmFlyX9PQ
+  kategori: video
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Mezopotamya Ajansı
+  url: https://www.youtube.com/feeds/videos.xml?channel_id=UC1DEmX8Uk-egPybMPultYMA
+  kategori: video
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Techolay
+  url: https://www.youtube.com/feeds/videos.xml?channel_id=UChy0jM_FRN4SyOIBpStiRdg
+  kategori: video
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Daily Search Trends
+  url: https://trends.google.com/trending/rss?geo=TR
+  kategori: sorgu
+  tur: rss
+  kaynak:
+  - feeder
+- ad: Google Haberler — Beşiktaş
+  url: https://news.google.com/rss/search?q=Be%C5%9Fikta%C5%9F&hl=tr&gl=TR&ceid=TR:tr
+  kategori: sorgu
+  tur: uretilen
+  kaynak:
+  - medya-takip
+- ad: Google Haberler — Fenerbahçe
+  url: https://news.google.com/rss/search?q=Fenerbah%C3%A7e&hl=tr&gl=TR&ceid=TR:tr
+  kategori: sorgu
+  tur: uretilen
+  kaynak:
+  - medya-takip
+- ad: Google Haberler — Galatasaray
+  url: https://news.google.com/rss/search?q=Galatasaray&hl=tr&gl=TR&ceid=TR:tr
+  kategori: sorgu
+  tur: uretilen
+  kaynak:
+  - medya-takip
+- ad: Google Haberler — Milli Takım futbol
+  url: https://news.google.com/rss/search?q=Milli%20Tak%C4%B1m%20futbol&hl=tr&gl=TR&ceid=TR:tr
+  kategori: sorgu
+  tur: uretilen
+  kaynak:
+  - medya-takip
+- ad: Google Haberler — Süper Lig
+  url: https://news.google.com/rss/search?q=S%C3%BCper%20Lig&hl=tr&gl=TR&ceid=TR:tr
+  kategori: sorgu
+  tur: uretilen
+  kaynak:
+  - medya-takip
+- ad: Google Haberler — TFF
+  url: https://news.google.com/rss/search?q=TFF&hl=tr&gl=TR&ceid=TR:tr
+  kategori: sorgu
+  tur: uretilen
+  kaynak:
+  - medya-takip
+- ad: Google Haberler — Trabzonspor
+  url: https://news.google.com/rss/search?q=Trabzonspor&hl=tr&gl=TR&ceid=TR:tr
+  kategori: sorgu
+  tur: uretilen
+  kaynak:
+  - medya-takip
+- ad: Google Haberler — transfer futbol
+  url: https://news.google.com/rss/search?q=transfer%20futbol&hl=tr&gl=TR&ceid=TR:tr
+  kategori: sorgu
+  tur: uretilen
+  kaynak:
+  - medya-takip
+- ad: Google Haberler — Çok okunanlar
+  url: https://news.google.com/rss?hl=tr&gl=TR&ceid=TR:tr
+  kategori: sorgu
+  tur: uretilen
+  kaynak:
+  - github

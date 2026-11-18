@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Medya Takip</title>
+<meta name="description" content="Türkçe haber kaynaklarının kategorili RSS dizini ve canlı medya takip merkezi. Açık kaynak.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23185FA5' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M5 19h.01M4 4a16 16 0 0 1 16 16M4 11a9 9 0 0 1 9 9'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/statik/stil.css">
+</head>
+<body>
+<header class="ust">
+  <div class="kap ust-ic">
+    <a class="logo" href="#/takip"><i><span data-ik="rss"></span></i>Medya takip</a>
+    <nav class="sekmeler" aria-label="Bölümler">
+      <a href="#/takip" data-sekme="takip">Akış</a>
+      <a href="#/dizin" data-sekme="dizin">RSS dizini</a>
+      <a href="#/kayit" data-sekme="kayit">Kaydedilenler <span class="sayac" id="kayit-sayac"></span></a>
+    </nav>
+    <div class="canli" title="Beslemeler düzenli taranıyor"><b></b><span id="canli-yazi">Canlı</span></div>
+    <label class="ara"><span data-ik="ara"></span><input id="ara" type="search" placeholder="Haber, kişi, kurum ara" autocomplete="off"></label>
+  </div>
+</header>
+
+<main class="kap">
+  <!-- AKIŞ -->
+  <section id="takip" class="bolum" hidden>
+    <div class="serit" id="serit" aria-label="Trendler"></div>
+
+    <div class="arac-cubugu">
+      <div class="takip-satir">
+        <span class="etiket-baslik">Takip</span>
+        <div class="cipler" id="takip-cipler"></div>
+        <form id="takip-ekle" class="takip-ekle"><input id="takip-girdi" placeholder="Kişi, kulüp, marka ekle" maxlength="60"><button type="submit" aria-label="Takip listesine ekle"><span data-ik="arti"></span></button></form>
+      </div>
+      <div class="secimler">
+        <select id="f-kaynak" aria-label="Kaynak"><option value="">Tüm kaynaklar</option></select>
+        <select id="f-saat" aria-label="Zaman aralığı">
+          <option value="1">Son 1 saat</option><option value="6">Son 6 saat</option><option value="24" selected>Son 24 saat</option>
+          <option value="168">Son 7 gün</option><option value="720">Son 30 gün</option>
+        </select>
+        <select id="f-sira" aria-label="Sıralama"><option value="son">En yeni</option><option value="kaynak">En çok kaynak</option></select>
+        <button id="besleme-yap" class="ikincil" title="Bu görünümü RSS beslemesi olarak al"><span data-ik="rss"></span> RSS</button>
+      </div>
+    </div>
+    <div id="besleme-kutu" class="besleme-kutu" hidden></div>
+
+    <div id="manset-bolum">
+      <div class="baslik-satir"><h2>Şu an gündemde</h2><span>Son 6 saatte en çok sitenin yazdığı gelişmeler</span></div>
+      <section class="manset" id="manset"><div class="yer buyuk"></div><div class="yer"></div><div class="yer"></div></section>
+    </div>
+
+    <section class="ozet-bant">
+      <div class="kutu">
+        <div class="kutu-ust"><h3>Zaman çizelgesi</h3><span class="aciklama" id="grafik-aciklama"></span></div>
+        <div class="metrik-satir"><div><b id="m-haber">–</b><span>haber</span></div><div><b id="m-olay">–</b><span>olay</span></div><div><b id="m-kaynak">–</b><span>kaynak</span></div></div>
+        <div id="grafik"></div><div id="grafik-lejant" class="lejant"></div>
+      </div>
+      <div class="kutu"><div class="kutu-ust"><h3>En çok yazan kaynaklar</h3></div><div id="en-kaynak"></div></div>
+      <div class="kutu"><div class="kutu-ust"><h3>Kategori dağılımı</h3></div><div id="kat-dagilim"></div></div>
+    </section>
+
+    <div class="baslik-satir akis-baslik"><h2>Akış</h2><span id="akis-sayi"></span></div>
+    <div class="kat-filtre" id="kat-filtre"></div>
+    <button id="yeni-bant" class="yeni-bant" hidden></button>
+    <section class="izgara" id="olaylar"></section>
+    <button id="daha" class="ikincil genis" hidden>Daha fazla göster</button>
+  </section>
+
+  <!-- RSS DİZİNİ -->
+  <section id="dizin" class="bolum" hidden>
+    <div class="baslik-satir"><h2>RSS dizini</h2><span>Kopyala, seç, OPML indir ya da kendi birleşik beslemeni üret</span></div>
+    <div class="kat-filtre" id="kat-cipler"></div>
+    <div class="filtreler">
+      <select id="d-durum" aria-label="Durum">
+        <option value="">Tüm durumlar</option><option value="canli">Canlı</option><option value="yavas">Yavaş</option><option value="sorun">Sorunlu</option>
+      </select>
+      <select id="d-tur" aria-label="Tür"><option value="">Tüm türler</option><option value="rss">Sitenin RSS'i</option><option value="uretilen">Üretilen</option></select>
+      <label class="onay"><input type="checkbox" id="d-hepsi"> Görünenlerin hepsini seç</label>
+      <div class="bosluk"></div>
+      <span class="aciklama" id="d-sayi"></span>
+    </div>
+    <div id="kaynak-liste" class="liste kutu-liste"></div>
+  </section>
+
+  <!-- KAYDEDİLENLER -->
+  <section id="kayit" class="bolum" hidden>
+    <div class="baslik-satir"><h2>Kaydedilenler</h2><span>Yalnızca bu tarayıcıda saklanır</span></div>
+    <div class="filtreler">
+      <div class="cipler" id="etiket-cipler"></div>
+      <div class="bosluk"></div>
+      <button id="disa-aktar" class="ikincil"><span data-ik="indir"></span> Dışa aktar</button>
+      <label class="ikincil dugme"><span data-ik="yukle"></span> İçe aktar<input type="file" id="ice-aktar" accept="application/json" hidden></label>
+    </div>
+    <section id="kayitlar" class="izgara"></section>
+  </section>
+</main>
+
+<!-- OLAY ÇEKMECESİ -->
+<div id="cekmece" class="cekmece" hidden>
+  <div class="cekmece-perde" data-kapat></div>
+  <aside class="cekmece-panel" role="dialog" aria-modal="true" aria-labelledby="c-baslik">
+    <button class="ikon cekmece-kapat" data-kapat aria-label="Kapat"><span data-ik="kapat"></span></button>
+    <div id="cekmece-ic"></div>
+  </aside>
+</div>
+
+<div id="secim-cubugu" class="secim-cubugu" hidden>
+  <div class="kap secim-ic">
+    <span id="secim-sayi"></span>
+    <button class="metin-dugme" id="secim-temizle">Temizle</button>
+    <div class="bosluk"></div>
+    <button class="ikincil" id="kopyala-liste"><span data-ik="liste"></span> URL listesini kopyala</button>
+    <button class="ikincil" id="indir-opml"><span data-ik="indir"></span> OPML indir</button>
+    <div class="birlesik">
+      <input id="birlesik-kelime" placeholder="Anahtar kelime (isteğe bağlı)">
+      <code id="birlesik-url"></code>
+      <button class="ikon" id="birlesik-kopyala" aria-label="Birleşik besleme adresini kopyala"><span data-ik="kopya"></span></button>
+    </div>
+  </div>
+</div>
+
+<div id="bildirim" class="bildirim" role="status" aria-live="polite"></div>
+<script src="/statik/uygulama.js"></script>
+</body>
+</html>
