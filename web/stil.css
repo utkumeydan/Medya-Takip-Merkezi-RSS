@@ -65,14 +65,11 @@ mark { background: var(--isaret); color: inherit; border-radius: 3px; padding: 0
 .dip-sol { display: flex; align-items: center; gap: 8px 18px; flex-wrap: wrap; font-size: 13px; color: var(--metin-3); }
 .dip-sol a { color: var(--metin-2); display: inline-flex; align-items: center; gap: 6px; }
 .dip-sol a:hover { color: var(--metin); }
-.imza { display: flex; align-items: center; gap: 12px; padding: 8px 8px 8px 8px; border-radius: 999px; border: .5px solid var(--cizgi); background: var(--yuzey); color: var(--metin); transition: transform .3s var(--yumusak), box-shadow .3s; }
-.imza:hover { transform: translateY(-2px); box-shadow: var(--golge); }
+.imza { display: flex; align-items: center; gap: 12px; padding: 8px 18px 8px 8px; border-radius: 999px; border: .5px solid var(--cizgi); background: var(--yuzey); color: var(--metin); transition: transform .3s var(--yumusak), box-shadow .3s; }
 .imza-harf { width: 38px; height: 38px; border-radius: 50%; background: var(--metin); color: var(--zemin); display: grid; place-items: center; font-weight: 600; font-size: 13px; letter-spacing: .02em; flex: none; }
 .imza-metin { display: flex; flex-direction: column; line-height: 1.25; }
 .imza-metin small { font-size: 11px; color: var(--metin-3); }
 .imza-metin b { font-size: 14px; font-weight: 600; }
-.imza-git { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 500; color: var(--vurgu); background: var(--vurgu-zemin); padding: 6px 12px; border-radius: 999px; margin-left: 6px; }
-.imza-git .ik { width: 13px; height: 13px; }
 
 /* ---------- ortak denetimler ---------- */
 main { padding-top: 4px; padding-bottom: 120px; }
@@ -303,6 +300,4 @@ input:focus, select:focus, button:focus-visible { outline: 2px solid var(--vurgu
   .filtreler select { flex: 1 1 140px; min-width: 0; width: 0; }
   .filtreler .bosluk { display: none; }
   .kart-dugmeler { opacity: 1; transform: none; }
-  .imza { width: 100%; border-radius: var(--rk); }
-  .imza-git { margin-left: auto; }
 }
